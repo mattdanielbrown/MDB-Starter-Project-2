@@ -1,6 +1,14 @@
-// Note: I use Autoprefixer to add vendor prefixes to our CSS -> https://github.com/postcss/autoprefixer
+// Note: I was using Autoprefixer to add the vendor prefixes
+//	(https://github.com/postcss/autoprefixer) via gulp,
+// 	 but lately I've been using the CodeKit App and
+//	letting it handle all the SCSS compiling,
+//	prefixing, and compression.
 
-
+//––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  * THIS FILE JUST HOLDS A FEW RANDOM
+//  * STYLE 'defaults' I AM FOND OF.
+//  * THIS FILE ISN'T ESSENTIAL AND CAN
+//  * BE DELETED.
 
 /* -------------------------------- 
 
@@ -45,7 +53,11 @@ Patterns - reusable parts of the design
 
 -------------------------------- */
 
-.container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+.container {
+	
+	/* this class is used to give a max-width to the element it is applied to, 
+	and center it horizontally when it reaches that max-width */
+	
 	width: 90%;
 	max-width: $L; // breakpoints inside partials > _layout.scss
 	margin: 0 auto;
