@@ -54,6 +54,13 @@ To select a font, there are 2 steps:
 // Google font references
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
+// By default all of the following references are commented-out.
+// This is to protect against a severe performance impact, as this
+// partial is already imported into the main stylesheet file.
+//
+// ...So all that needs to be done, is to choose one of the following fonts,
+// and uncomment it, or add the reference if it's not here.
+
 // * NOTE:
 //          - Choose carefully... These impact page performance...
 //          - Also, even though all weights of each font are included,
