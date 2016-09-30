@@ -86,6 +86,93 @@ To select a font, there are 2 steps:
 
 ## Adding Partials
 
+#### Contents of _/scss/main.scss_
+```scss
+// Import the (S)CSS Reset
+@import "vendor/reset";                 // SCSS version of a CSS Reset; customized version of Meyer's CSS Reset
+
+// Import the Google font reference
+//      ( These are all commented out by default; To activate, go into the file and uncomment desired font. )
+@import "vendor/google-fonts";
+
+// Import the basics
+@import 'partials/base/variables';      // colors, fonts etc...
+@import 'partials/base/mixins';         // custom mixins
+@import 'partials/base/layout';         // responsive grid and media queries
+
+// Import the project specific styles
+@import "partials/defaults";            // place for primary / final styling and overrides
+```
+
+_scss/main.scss_ serves as the parent of all styling files (SASS-based, at least), and it's only job is to collect all other SASS files and combine them in preparation to be compiled from SASS into CSS.
+
+In this project, _scss/main.scss_ is meant to contain no actual/direct styles, and, as mentioned above, is only there to round up all the other SASS files to be converted into CSS. 
+
+The resulting CSS file (_css/main.css_, or _css/main.min.css_) is the main, and ideally, only stylesheet to be used in the project.
+
+#### However, alternate stylesheets for other .html files would be acceptable. (The main goal is to limit the number of stylesheets in each .html to one).
+
+So, to add new styles to the project, here is the reccomended process:
+
+ 1. create a new SASS file (a SCSS partial is suggested)
+ 2. write any desired styles
+ 3. import the newly created file into _scss/main.scss_
+ 4. (IF NECCESSARY) re-compile SASS files
+ 
+ #### For example:
+ 
+ * Create a new partial:  
+ 
+ ```scss
+ // scss/partials/_my-style.scss
+ //
+ //  This is an example partial.
+ //  It will be imported into /scss/main.scss
+ //
+ 
+ .my-style-class {
+    display: block;
+    text-align: center;
+    border: red solid thin;
+ }
+ 
+ #my-style-id {
+    display: inline;
+    background: red;
+    border: red solid thin;
+    border-radius: .25em;
+ }
+```  
+
+ * Add the import statement to _/scss/main.scss_ (last line in the example below)
+ 
+ ```scss
+// Import the (S)CSS Reset
+@import "vendor/reset";                 // SCSS version of a CSS Reset; customized version of Meyer's CSS Reset
+
+// Import the Google font reference
+//      ( These are all commented out by default; To activate, go into the file and uncomment desired font. )
+@import "vendor/google-fonts";
+
+// Import the basics
+@import 'partials/base/variables';      // colors, fonts etc...
+@import 'partials/base/mixins';         // custom mixins
+@import 'partials/base/layout';         // responsive grid and media queries
+
+// Import the project specific styles
+@import "partials/defaults";            // place for primary / final styling and overrides
+
+// Import the new partial
+@import "partials/my-styles";
+```
+
+* If neccessary, re-compile _scss/main.scss
+
+ In terminal at **project root**, run:
+ ```bash
+ sass -scss scss/main.scss > css/main.css
+ ```
+ 
 
 ## File Structure
 
