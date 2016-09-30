@@ -26,10 +26,10 @@ There is no 'installation' exactly - assuming you have npm and sass installed.
 
 The following are suggestions of what to do following downloading the project starter in order to get everything setup and ready for development.
 
-  * Choose (or add) fonts via the *scss/vendor/_google-fonts.scss* partial (see https://github.com/mattdanielbrown/MDB-Starter-Project-2/master/README.md#fonts below)
+  * Choose (or add) fonts via the *scss/vendor/_google-fonts.scss* partial (see [Fonts](https://github.com/mattdanielbrown/MDB-Starter-Project-2#fonts) below)
   * Edit the partials, *scss/partials/_variables.scss, -mixins.scss, and -layout.scss* to suit project's needs
   * Add partials to the *partials* directory
-    * ...and update *scss/main.scss* (see https://github.com/mattdanielbrown/MDB-Starter-Project-2/master/README.md#adding-partials below)
+    * ...and update *scss/main.scss* (see [Adding Partials](https://github.com/mattdanielbrown/MDB-Starter-Project-2/blob/master/README.md#adding-partials) below)
 
 
 ## Fonts
@@ -77,7 +77,7 @@ To select a font, there are 2 steps:
 //@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 ```
 
-## Adding-Partials
+## Adding Partials
 
 
 ## File Structure
