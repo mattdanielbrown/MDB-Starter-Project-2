@@ -7,8 +7,9 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 //  * THIS FILE JUST HOLDS A FEW RANDOM
 //  * STYLE 'defaults' I AM FOND OF.
-//  * THIS FILE ISN'T ESSENTIAL AND CAN
-//  * BE DELETED.
+//  * THIS FILE ISN'T ESSENTIAL AND 
+//  * CAN (AND PROBABLY SHOULD) BE
+//  * MODIFIED OR DELETED.
 
 /* -------------------------------- 
 
@@ -22,6 +23,9 @@ Primary style
 
 html {
 	font-size: 62.5%;
+	
+	// disable font adjustment on iPhone and other webkit-based browsers
+	-webkit-text-size-adjust: none;
 }
 
 body {
