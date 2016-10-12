@@ -38,15 +38,16 @@ This starter template attempts to provided an easy way to get up and running qui
 
 Thus, to handle fonts, there is a SCSS partial that offers a few of the most common typefaces on Google Fonts.
 
-However, they are all disabled by default, as not doing so could severly impact perfomrance.
+'Source Sans Pro' is the default, and the only font that is enabled. However, 'Source Sans Pro', as well as all the others, include ALL of the typefaces font weights. This is only for development purposes and to help speed up the project setup, and as such, SHOULD NEVER be used like this in a production enviroment, as not doing so could severly impact perfomrance. As a general rule, only ever include the exact fonts (and of them, only the specific weights) that are used.
 
-To select a font, there are 2 steps:
+To select a font other than 'Source Sans Pro', there are 2 steps:
 
   1. Open *scss/vendor/_google-fonts.scss*, and either
-    * uncomment the reference for the desired google font
-    * add a google font reference for the desired font
+    * uncomment the reference for the desired google font (and comment-out 'Source Sans Pro', unless you are going to use it.)
+  Or
+    * add a google font reference for the desired font (and comment-out 'Source Sans Pro', unless you are going to use it.)
   
-  2. Open *scss/partials/_variables.scss*, and update the *base-font-family* varialbe to the new font.
+  2. Open *scss/partials/_variables.scss*, and update the *primary-font-main* varialbe to the new font.
   
 #### Contents of the */scss/vendor/_google-fonts.scss* partial
 
@@ -75,7 +76,7 @@ To select a font, there are 2 steps:
 //@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
 // Source Sans Pro Font
-//@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);      // Default Font
 
 // Roboto Font
 //@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
