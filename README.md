@@ -19,7 +19,7 @@ There is no 'installation' exactly - assuming you have npm and sass installed.
 
     1. in terminal, move to whatever directory you'd like the template to be downloaded into  
     2. run  
-            `git clone https://github.com/mattdanielbrown.com/MDB-Starter-Project-2   `   
+            `git clone https://github.com/mattdanielbrown/MDB-Starter-Project-2.git   `   
     3. move into in the _MDB-Starter-Project-2_ directory (run `cd MDB-Starter-Project-2`), and go nuts.
 
 ## Setup
