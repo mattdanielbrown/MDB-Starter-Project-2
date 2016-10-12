@@ -11,4 +11,8 @@ $color-3: #ffffff; // body background color
 // go into that file and uncomment desired fonts and change
 // this variable's value to whatever that is.
 
-$primary-font: "Helvetica Neue", Helvetica, sans-serif;
+$primary-font-main: 'Source Sans Pro';                                        // Main font.
+
+$primary-font-fallback: "Helvetica Neue", Helvetica, Arial, sans-serif;       // Fallback font if main font is not available.
+
+$primary-font: $primary-font-main, $primary-font-fallback;                    // Project font (includes main and fallback).
