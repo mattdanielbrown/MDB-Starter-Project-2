@@ -50,6 +50,7 @@ $mq-breakpoints: (
 @import 'partials/base/variables';      // colors, fonts etc...
 @import 'partials/base/mixins';         // custom mixins
 @import 'partials/base/layout';         // responsive grid and media queries
+@import 'partials/base/typography';     // set typographic styles
 
 // Import the project specific styles
 @import "partials/defaults";            // place for primary / final styling and overrides
