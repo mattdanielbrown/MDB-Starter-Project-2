@@ -55,23 +55,6 @@ To select a font other than 'Source Sans Pro', there are 2 steps:
 // Google font references
 // –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-// By default all of the following references are commented-out.
-// This is to protect against a severe performance impact, as this
-// partial is already imported into the main stylesheet file.
-//
-// ...So all that needs to be done, is to choose one of the following fonts,
-// and uncomment it, or add the reference if it's not here.
-
-// * NOTE:
-//          - Choose carefully... These impact page performance...
-//          - Also, even though all weights of each font are included,
-//          - BE SURE TO SELECT ONLY A FEW of the chosen font.
-//
-//          - If desired font isn't included, import new fonts into this file.
-//
-//          - DON'T FORGET to go into ./scss/partials/_variables.scss
-//          - and specify the new chosen font as the $base-font-family variable.
-
 // Lato Font
 //@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
@@ -100,6 +83,7 @@ To select a font other than 'Source Sans Pro', there are 2 steps:
 @import 'partials/base/variables';      // colors, fonts etc...
 @import 'partials/base/mixins';         // custom mixins
 @import 'partials/base/layout';         // responsive grid and media queries
+@import 'partials/base/typography';     // styles typographic elements
 
 // Import the project specific styles
 @import "partials/defaults";            // place for primary / final styling and overrides
