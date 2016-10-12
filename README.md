@@ -40,14 +40,15 @@ Thus, to handle fonts, there is a SCSS partial that offers a few of the most com
 
 'Source Sans Pro' is the default, and the only font that is enabled. However, 'Source Sans Pro', as well as all the others, include ALL of the typefaces font weights. This is only for development purposes and to help speed up the project setup, and as such, SHOULD NEVER be used like this in a production enviroment, as not doing so could severly impact perfomrance. As a general rule, only ever include the exact fonts (and of them, only the specific weights) that are used.
 
-To select a font other than 'Source Sans Pro', there are 2 steps:
+To select a font other than 'Source Sans Pro':
 
   1. Open *scss/vendor/_google-fonts.scss*, and either
-    * uncomment the reference for the desired google font (and comment-out 'Source Sans Pro', unless you are going to use it.)
-  Or
-    * add a google font reference for the desired font (and comment-out 'Source Sans Pro', unless you are going to use it.)
+   * uncomment the reference for the desired google font.
+   * Or add a google font reference for the desired font.
   
-  2. Open *scss/partials/_variables.scss*, and update the *primary-font-main* varialbe to the new font.
+  2. Comment-out or delete the 'Source Sans Pro' import statement (unless you are still going to use it).
+  
+  3. Open *scss/partials/_variables.scss*, and update the *primary-font-main* varialbe to the new font.
   
 #### Contents of the */scss/vendor/_google-fonts.scss* partial
 
